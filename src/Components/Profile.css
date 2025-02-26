@@ -1,0 +1,84 @@
+
+.typing-text {
+    font-size: 50px;
+    font-weight: 600;
+    text-align: left;
+    display: inline-block;
+    white-space: nowrap;
+    border-right: 3px solid black; 
+    animation: blinkCursor 0.8s infinite;
+}
+
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+
+@keyframes slideIn {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    height: 100vh;
+    padding: 50px;
+}
+
+
+.profile-text {
+    width: 50%;
+}
+
+.profile-text p {
+    font-size: 20px;
+    line-height: 32px;
+    width: 90%;
+    text-align: left;
+}
+
+.profile-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.resume {
+    padding: 15px 30px;
+    border-radius: 50px;
+    border: 2px solid white;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+
+.profile-image {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+}
+
+.profile-image img {
+    width: 350px;
+    height: auto;
+    border-radius: 10px;
+    
+    
+    animation: slideIn 1s ease-out forwards;
+}
