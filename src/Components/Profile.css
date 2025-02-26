@@ -1,12 +1,14 @@
 
 .typing-text {
     font-size: 50px;
-    font-weight: 600;
+    font-weight: 200;
     text-align: left;
     display: inline-block;
     white-space: nowrap;
     border-right: 3px solid black; 
     animation: blinkCursor 0.8s infinite;
+    color: #61CE70;
+    margin-bottom: 20px;
 }
 
 
@@ -35,7 +37,8 @@
     width: 80%;
     margin: 0 auto;
     height: 100vh;
-    padding: 50px;
+    padding: 20px; 
+    padding-top: 50px; 
 }
 
 
@@ -44,10 +47,13 @@
 }
 
 .profile-text p {
-    font-size: 20px;
+    font-size: 14px;
     line-height: 32px;
-    width: 90%;
+    width: 120%; 
     text-align: left;
+    font-weight: 400;
+    font-family: Raleway;
+    
 }
 
 .profile-action {
@@ -57,13 +63,19 @@
 }
 
 .resume {
-    padding: 15px 30px;
-    border-radius: 50px;
-    border: 2px solid white;
+    display: inline-block;
+    padding: 12px 40px;  
+    border-radius: 10px;  
+    
     cursor: pointer;
     color: white;
+    background-color: #61CE70; 
     text-decoration: none;
     font-size: 18px;
+    font-weight: 500;
+    transition: all 0.3s ease-in-out;
+    font-family: Roboto;
+
 }
 
 
@@ -79,6 +91,6 @@
     height: auto;
     border-radius: 10px;
     
-    
     animation: slideIn 1s ease-out forwards;
 }
+

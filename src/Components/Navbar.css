@@ -12,13 +12,19 @@
 
 .nav-menu{
     display:flex;
-    align-items: center;
+    align-items: right;
     list-style:none;
     gap:60px;
     font-size:20px;
     cursor: pointer;
     
+    
 }
 
+
+.nav-menu :hover{
+    color:#61CE70;
+    text-decoration: underline;
+} ;
 
 

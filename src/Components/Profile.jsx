@@ -2,28 +2,37 @@ import React, { useState, useEffect } from 'react';
 import profileimg from "../assets/profile.jpg";
 import './Profile.css';
 
+
 function Profile() {
   const [text, setText] = useState('');
-  const fullText = "Hi! I am a Frontend Developer";
+  const staticText = "Hi! I am a"; 
+  const typingText = " Frontend Developer";
+  const typingSpeed = 100;
 
   useEffect(() => {
     let index = 0;
     const interval = setInterval(() => {
-      setText(fullText.slice(0, index + 1));
+      setText(typingText.slice(0, index + 1));
       index++;
-      if (index === fullText.length) {
-        clearInterval(interval);
+
+      if (index > typingText.length) {
+        setTimeout(() => { 
+          index = 0; 
+          setText('');
+        }, 1000); 
       }
-    }, 100);
+    }, typingSpeed);
 
     return () => clearInterval(interval);
   }, []);
 
   return (
-    <div className='Profile'>
+    <div id="profile" className='Profile'> 
       
       <div className="profile-text">
-        <h1 className="typing-text">{text}</h1>
+        <h3 className="typing-text">
+          {staticText}<span>{text}</span> 
+        </h3>
         <p>
           I am a passionate Front-End Developer with a keen interest in building responsive, 
           user-friendly, and visually appealing websites. With a strong foundation in HTML, CSS, JavaScript, 
@@ -31,11 +40,11 @@ function Profile() {
         </p>
         
         <div className='profile-action'>
-          <a href="/Jannat_s_Resume (1).pdf" download="My_Resume.pdf" className='resume'>My Resume</a>
+          <a href="/Jannat_s_Resume (1).pdf" download="My_Resume.pdf" className='resume'>Download My Resume</a>
         </div>
+        
       </div>
 
-      
       <div className="profile-image">
         <img src={profileimg} alt="Profile" />
       </div>
