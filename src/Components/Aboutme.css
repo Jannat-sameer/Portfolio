@@ -1,3 +1,4 @@
+
 .about-me {
     width: 80%;
     margin: 50px auto;
@@ -9,7 +10,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    gap: 50px; 
+    gap: 50px;
 }
 
 
@@ -23,7 +24,7 @@
     margin-bottom: 10px;
     color: #61CE70;
     margin-right: 30px;
-    font-family: Railway;
+    font-family: Raleway;
 }
 
 .about-left h3 {
@@ -58,3 +59,58 @@
     line-height: 1.6;
 }
 
+
+@media (max-width: 1024px) {
+    .about-me {
+        width: 90%;
+    }
+
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-left,
+    .about-right {
+        width: 100%;
+        text-align: center;
+    }
+
+    .about-left h2,
+    .about-left h3 {
+        text-align: center;
+    }
+
+    .about-right blockquote {
+        text-align: center;
+        border-left: none;
+        padding-left: 0;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-me {
+        width: 95%;
+        margin: 30px auto;
+    }
+
+    .about-left h2 {
+        font-size: 18px;
+    }
+
+    .about-left h3 {
+        font-size: 20px;
+    }
+
+    .about-left p,
+    .about-right p {
+        font-size: 16px;
+        line-height: 1.4;
+    }
+
+    .about-right blockquote {
+        font-size: 14px;
+        padding-left: 0;
+    }
+}

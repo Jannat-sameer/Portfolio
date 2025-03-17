@@ -2,6 +2,7 @@ import React from 'react';
 import './AboutMe.css';
 
 const AboutMe = () => {
+  
   return (
     <div id="about-me" className="about-me">
       <div className="about-content">

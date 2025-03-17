@@ -4,6 +4,7 @@ import './Profile.css';
 
 
 function Profile() {
+  
   const [text, setText] = useState('');
   const staticText = "Hi! I am a"; 
   const typingText = " Frontend Developer";

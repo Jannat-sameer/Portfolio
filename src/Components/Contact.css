@@ -1,0 +1,97 @@
+
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 20px;
+    
+}
+
+
+.contact form {
+   
+    padding: 30px;
+    padding-right: 50px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.contact h2 {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+
+.input-box label {
+    display: block;
+    color: #bbb;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+
+.field {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 16px;
+    background: transparent;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+.field::placeholder {
+    color: #aaa;
+}
+
+
+.field:focus {
+    border-color: #48b86d;
+}
+
+
+.mess {
+    min-height: 100px;
+    resize: none;
+}
+
+
+button {
+    width: 100%;
+    padding: 12px;
+    background: #48b86d;
+    border: none;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.3s;
+    margin-left: 10px;
+   
+}
+
+button:hover {
+    background: #3aa35e;
+}
+
+
+p {
+    margin-top: 15px;
+    color: white;
+    font-size: 14px;
+}

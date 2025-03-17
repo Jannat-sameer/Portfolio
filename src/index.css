@@ -1,12 +1,28 @@
 
-*{
-  margin: 0;
-  padding: 0;
+body.light {
+  background-color: white;
+  color: black;
 }
 
-body{
-  height: 100vh;
-  background: black;
-  color: white ;
-  font-family: 'outfit';
+
+body.dark {
+  background-color: #121212;
+  color: white;
+}
+
+
+.theme-toggle.light {
+  color: black;
+}
+
+.theme-toggle.dark {
+  color: white;
+}
+
+body.light, body.light * {
+  color: black;
+}
+
+body.dark, body.dark * {
+  color: white;
 }
